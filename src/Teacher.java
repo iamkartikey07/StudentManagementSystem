@@ -1,12 +1,13 @@
 import java.util.List;
+import java.util.ArrayList;
 public class Teacher extends Person {
     private String classCoordinatorOf;
-    private List<String> subjectsTaught;
+    private List<Subject> subjectsTaught;
 
-    public Teacher(String name, int age, String gender, String id, String classCoordinatorOf, List<String> subjectsTaught) {
+    public Teacher(String name, int age, String gender, String id, String classCoordinatorOf) {
         super(name, age, gender, id);
         this.classCoordinatorOf = classCoordinatorOf;
-        this.subjectsTaught = subjectsTaught;
+        this.subjectsTaught = new ArrayList<>();
     }
 
     @Override
@@ -17,7 +18,7 @@ public class Teacher extends Person {
     public String getClassTeacherOf() {
         return classCoordinatorOf;
     }
-    public List<String> getSubjectsTaught(){
+    public List<Subject> getSubjectsTaught(){
         return subjectsTaught;
     }
     public void assignSection(String newSection){
@@ -28,5 +29,8 @@ public class Teacher extends Person {
     }
     public String submitMarks(){
         return "Marks Submitted";
+    }
+    public void addSubject(Subject subject) {
+        this.subjectsTaught.add(subject);
     }
 }
