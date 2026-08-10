@@ -10,17 +10,10 @@ public class Main {
         Result r = new Result(69,2,s);
 
 
-        System.out.println(st.getName());
-        System.out.println(st.getRollNum());
-        System.out.println(st.getGender());
-        System.out.println(st.getId());
-        System.out.println(st.getRole());
-        System.out.println(st.getSection());
-        System.out.println(st.getStatus());
-        System.out.println(st.isFeesPaid());
-        System.out.println(st.isHosteler());
-        System.out.println(se.getGrade());
-        System.out.println(t.getName());
+        System.out.println(st);
+        System.out.println(se);
+        System.out.println(t);
+        System.out.println(s);
         r.displayResult();
     }
 }
