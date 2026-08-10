@@ -50,4 +50,9 @@ public class Student extends Person {
     public void enrollSubject(Subject subject){
         this.subjects.add(subject);
     }
+
+    @Override
+    public String toString(){
+        return  getName() + ", " + getId() + ", " + getAge() + "," + getGender() + ", " + rollNum + ", " + section + ", " + isFeesPaid + ", " + isHosteler + ", " + status;
+    }
 }
