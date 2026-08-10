@@ -37,4 +37,9 @@ public class Section {
     public void removeStudent(Student student) {
         this.students.remove(student);
     }
+
+    @Override
+    public String toString(){
+        return identifier + ", "
+    }
 }

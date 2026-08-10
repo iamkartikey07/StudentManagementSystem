@@ -16,4 +16,9 @@ public class Subject {
     public String getTeacherAssigned(){
         return teacherAssigned;
     }
+
+    @Override
+    public String toString(){
+        return subjectName + ", " + subjectCode + ", " + teacherAssigned;
+    }
 }
