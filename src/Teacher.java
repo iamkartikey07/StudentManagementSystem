@@ -33,4 +33,9 @@ public class Teacher extends Person {
     public void addSubject(Subject subject) {
         this.subjectsTaught.add(subject);
     }
+
+    @Override
+    public String toString(){
+        return getName() + ", " + getId() + ", " + getAge() + "," + getGender() + ", " + getClassTeacherOf();
+    }
 }
