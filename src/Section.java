@@ -40,6 +40,6 @@ public class Section {
 
     @Override
     public String toString(){
-        return identifier + ", " + grade + ", " + classTeacher.getName() + ", " + students.size();
+        return "SECTION :- " +"Identifier = "+ identifier + ", " +"Grade = "+ grade + ", " +"Class Teacher = "+ classTeacher.getName() + ", " +"Strength = "+ students.size();
     }
 }

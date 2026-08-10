@@ -36,6 +36,6 @@ public class Teacher extends Person {
 
     @Override
     public String toString(){
-        return getName() + ", " + getId() + ", " + getAge() + "," + getGender() + ", " + getClassTeacherOf();
+        return "TEACHER :- " +"Name = "+getName() + ", " +"Age = "+ getAge() + ", " +"Gender = "+ getGender() + ", " +"Id = "+ getId() + ", " +"Class Teacher of = "+getClassTeacherOf();
     }
 }

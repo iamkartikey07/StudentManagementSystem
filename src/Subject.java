@@ -19,6 +19,6 @@ public class Subject {
 
     @Override
     public String toString(){
-        return subjectName + ", " + subjectCode + ", " + teacherAssigned;
+        return "SUBJECTS :- " + "Subject name = "+ subjectName + ", " +"Subject code = "+ subjectCode + ", " +"Teacher Assigned = "+ teacherAssigned;
     }
 }

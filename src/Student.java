@@ -53,6 +53,6 @@ public class Student extends Person {
 
     @Override
     public String toString(){
-        return  getName() + ", " + getId() + ", " + getAge() + "," + getGender() + ", " + rollNum + ", " + section + ", " + isFeesPaid + ", " + isHosteler + ", " + status;
+        return  "STUDENT :- " + "Name = "+getName() + ", " +"Age = "+ getAge() + ", " +"Gender = "+getGender() + ", " +"Id = "+ getId() + ", " + "Roll Number = "+ rollNum + ", " + "Section = " + section + ", " + "Fees Paid = " +isFeesPaid + ", " +"Hosteler = "+ isHosteler + ", " +"Status = "+ status;
     }
 }
